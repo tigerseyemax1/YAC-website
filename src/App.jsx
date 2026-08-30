@@ -2,21 +2,38 @@
 import { useState } from 'react'
 import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
+import yacmeeting1 from './assets/yacmeeting1.jpg'
+import { animateForward, animateBackward } from './gsapFunctions'
 
 const LandingPage = () => {
-  return(
-    <div>
-      <nav className = 'navbar'>
-        <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
-        <ul>
-          <li><a href = "About">About</a></li>
-          <li><a href = "Events">Events</a></li>
-          <li><a href = "Resources">Resources</a></li>
-          <li><a href = "Donate">Donate</a></li>
-          <li><a href = "Join the community">Join the community</a></li>
 
-        </ul>
+  return(
+    <div id = "smooth-wrapper">
+      <div id = "smooth-content">
+
+      <nav className = 'navbar'>
+        <p>
+          <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
+        </p>
+          <a href = "About" className = "navText">About</a>
+          <a href = "Events" className = "navText">Events</a>
+          <a href = "Resources" className = "navText">Resources</a>
+          <a href = "Donate" className = "navText" >Donate</a>
+          <a href = "Join the community" className = "navText">Join the community</a>
       </nav>
+
+      <div className = "imageGSAP"
+           onMouseEnter = {() => {
+            { animateForward() };
+           }}
+            onMouseLeave = {() => {
+              { animateBackward() };
+            }} 
+            >
+        <img src = {yacmeeting1} alt = "YAC"></img>
+      </div>
+
+      </div>
     </div>
   )
 }
