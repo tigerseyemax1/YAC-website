@@ -12,24 +12,22 @@ const LandingPage = () => {
       <div id = "smooth-content">
 
       <nav className = 'navbar'>
-        <p>
-          <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
-        </p>
-          <a href = "About" className = "navText">About</a>
-          <a href = "Events" className = "navText">Events</a>
-          <a href = "Resources" className = "navText">Resources</a>
-          <a href = "Donate" className = "navText" >Donate</a>
-          <a href = "Join the community" className = "navText">Join the community</a>
+        <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
+        <ul>
+          <li><a href = "About" className = "navText">About</a></li>
+          <li><a href = "Events" className = "navText">Events</a></li>
+          <li><a href = "Resources" className = "navText">Resources</a></li>
+          <li><a href = "Donate" className = "navText" >Donate</a></li>
+          <li><a href = "Join the community" className = "navText">Join the community</a></li>
+          
+
+        </ul>
       </nav>
 
       <div className = "imageGSAP"
-           onMouseEnter = {() => {
-            { animateForward() };
-           }}
-            onMouseLeave = {() => {
-              { animateBackward() };
-            }} 
-            >
+           onMouseEnter = {() => { animateForward(); }}
+           onMouseLeave = {() => { animateBackward(); }}
+           >
         <img src = {yacmeeting1} alt = "YAC"></img>
       </div>
 
@@ -37,6 +35,7 @@ const LandingPage = () => {
     </div>
   )
 }
+
 
 export default LandingPage
 
