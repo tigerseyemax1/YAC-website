@@ -6,7 +6,7 @@ import yacmeeting1 from './assets/yacmeeting1.jpg'
 import { animateForward, animateBackward } from './gsapFunctions'
 import axios from 'axios'
 
-/* YO TYLER DELETE THIS */
+/* GIT FETCH TEST */
 
 /*
 axios.get('http://localhost:3001/notes').then(response => {
