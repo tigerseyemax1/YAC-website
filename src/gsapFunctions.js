@@ -17,3 +17,4 @@ export const animateForward = () => {
 export const animateBackward = () => {
   gsap.to(".imageGSAP", {x:-75, y:-25})
 }
+ 

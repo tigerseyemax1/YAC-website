@@ -1,5 +1,6 @@
 body {
-  font-family: 'Arial';
+  font-family: arial;
+  background-color: lightblue;
 }
 
 .navbar {
@@ -8,38 +9,19 @@ body {
   flex-direction: row;
 }
 
-ul {
-  /* trying to make the ul element float to the right of our nav bar */
-  display: flex;
-  justify-content: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  overflow: hidden;
-  background-color: white;
-}
-
 .navbar {
   width: 100%;
-  background-color: white;
   overflow: auto;
 }
 
 .navText {
   display: flex;
   padding-right: 50px;
-  padding-top: 30px;
-  margin: 0px;
+  margin-top: 50px;
   color: black;
   text-decoration: none;
   font-size: 20px;
-  font-family: 'Phantom';
   width: 100%;
-
-  /* why WOULDn"T THIS ALIGN */
-  text-align: center;
-  place-items: center;
 }
 
 .navbar a:hover {
@@ -68,7 +50,7 @@ ul {
 .imageGSAP img {
   position: absolute;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 20px;
   width: 275px;
   height: 275px;
   border-radius: 10px;
