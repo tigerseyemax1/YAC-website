@@ -4,6 +4,19 @@ import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
 import yacmeeting1 from './assets/yacmeeting1.jpg'
 import { animateForward, animateBackward } from './gsapFunctions'
+import axios from 'axios'
+
+/* YO TYLER DELETE THIS */
+
+/*
+axios.get('http://localhost:3001/notes').then(response => {
+  const notes = response.data 
+  console.log(notes)
+})
+
+const promise2 = axios.get('http://localhost:3001/foobar');
+console.log(promise2);
+*/
 
 const LandingPage = () => {
 
@@ -36,8 +49,12 @@ const LandingPage = () => {
   )
 }
 
+<<<<<<< HEAD
 
 export default LandingPage
+=======
+export default LandingPage;
+>>>>>>> c0bc0a9 (YO TYLER)
 
 
 
