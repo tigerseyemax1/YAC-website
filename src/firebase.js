@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
+import { getFirestore, collection, getDocs, addDoc } from 'firebase/firestore/lite'
 import { getDatabase, ref, set } from "firebase/database"
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyCIBGx6Ds0EuiVXLQK8VzDawmAiPIbvtRI",
@@ -23,14 +22,24 @@ async function getNamesEmails(db) {
 }
 
 export async function onUserEmailSubmit() {
+    /* entered into form has to be read in correctly */
     var email = document.getElementById("email").value;
+
+    /*
+    const form = e.email;
+    const formData = new FormData(form);
+    const email = formData.get("query");
+    */
+
+    event.preventDefault();
+    /* var email = document.getElementById("email").value; */
     try {
-      const docRef = await addDoc(collection(db, 'emails'), {
+      const docRef = await addDoc(collection(db, "emails"), {
           email: email,
       });
-    console.log("new user", email, "submitted!");
+       console.log("new user", email, "submitted!");
     } catch (e) {
-        debugger;
-        console.log("error adding", email);
+        console.log(e);
+       console.log("error adding", email);
     }
 };
