@@ -4,19 +4,9 @@ import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
 import yacmeeting1 from './assets/yacmeeting1.jpg'
 import { animateForward, animateBackward } from './gsapFunctions'
-import axios from 'axios'
+import { onUserEmailSubmit } from './firebase.js'
+import { text } from 'node:stream/consumers'
 
-/* GIT FETCH TEST */
-
-/*
-axios.get('http://localhost:3001/notes').then(response => {
-  const notes = response.data 
-  console.log(notes)
-})
-
-const promise2 = axios.get('http://localhost:3001/foobar');
-console.log(promise2);
-*/
 
 const LandingPage = () => {
 
@@ -25,16 +15,14 @@ const LandingPage = () => {
       <div id = "smooth-content">
 
       <nav className = 'navbar'>
-        <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
-        <ul>
-          <li><a href = "About" className = "navText">About</a></li>
-          <li><a href = "Events" className = "navText">Events</a></li>
-          <li><a href = "Resources" className = "navText">Resources</a></li>
-          <li><a href = "Donate" className = "navText" >Donate</a></li>
-          <li><a href = "Join the community" className = "navText">Join the community</a></li>
-          
-
-        </ul>
+        <p>
+          <a href = "YAC"><img src = {youthactioncayman} alt="YAC"/></a>
+        </p>
+          <a href = "About" className = "navText">About</a>
+          <a href = "Events" className = "navText">Events</a>
+          <a href = "Resources" className = "navText">Resources</a>
+          <a href = "Donate" className = "navText" >Donate</a>
+          <a href = "Join the community" className = "navText">Join the community</a>
       </nav>
 
       <div className = "imageGSAP"
@@ -44,17 +32,19 @@ const LandingPage = () => {
         <img src = {yacmeeting1} alt = "YAC"></img>
       </div>
 
+      <div>
+        <form onSubmit = "onUserEmailSubmit()">
+          <input type="text" id = "email"/>
+        </form>
+      </div> 
+
       </div>
     </div>
   )
 }
 
-<<<<<<< HEAD
 
-export default LandingPage
-=======
 export default LandingPage;
->>>>>>> c0bc0a9 (YO TYLER)
 
 
 
