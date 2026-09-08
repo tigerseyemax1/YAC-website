@@ -34,7 +34,7 @@ const LandingPage = () => {
       <div>
         <form>
           <input type="text" id = "email"/>
-          <button type="input" onClick = {onUserEmailSubmit}>Join!</button>
+          <button id='submit' type="input" onClick = {onUserEmailSubmit}>Join!</button>
         </form>
       </div> 
 
