@@ -83,22 +83,30 @@ ul {
 }
 #submit{
   position: relative;
-  left: 137px;
-  top: 220px;
+  left: 255px;
+  top: 218px;
   height: 40px;
   width: 100px;
   border-radius: 20px;
+  border: 10px;
 }
 
 #submit:hover {
-  background-color: darkgrey;
+  background-color: darkgray;
+  color: white;
 }
 
 #email{
   position: relative;
-  left: 240px;
+  left: 360px;
   top: 220px;
-  width: 1000px;
+  width: 700px;
   height: 40px;
-  border-radius: 150px;
+  border-radius: 9999px;
+  border: 10px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  font-family: phantom;
 }
