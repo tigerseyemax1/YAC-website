@@ -31,7 +31,7 @@ const LandingPage = () => {
            >
         <img id="img1" src = {yacmeeting1} alt = "YAC"></img>
       </div>
-      
+
       <div className = "img2"
            onMouseEnter = {() => { animateForward2(); }}
            onMouseLeave = {() => { animateBackward2(); }}
@@ -41,7 +41,7 @@ const LandingPage = () => {
 
       <div>
         <form>
-          <input type="text" id = "email" placeholder= "name@exmaple.com"/>
+          <input type="text" id = "email" placeholder= "name@example.com"/>
           <button id='submit' type="input" onClick = {onUserEmailSubmit}>Join!</button>
         </form>
       </div>
