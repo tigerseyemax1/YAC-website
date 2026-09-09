@@ -4,7 +4,7 @@ import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
 import yacmeeting1 from './assets/yacmeeting1.jpg'
 import mangrove from './assets/mangrove.jpg'
-import { animateForward, animateBackward } from './gsapFunctions'
+import { animateForward1, animateBackward1, animateForward2, animateBackward2} from './gsapFunctions'
 import { onUserEmailSubmit } from './firebase.js'
 
 
@@ -26,14 +26,15 @@ const LandingPage = () => {
       </nav>
 
       <div className = "imageGSAP"
-           onMouseEnter = {() => { animateForward(); }}
-           onMouseLeave = {() => { animateBackward(); }}
+           onMouseEnter = {() => { animateForward1(); }}
+           onMouseLeave = {() => { animateBackward1(); }}
            >
         <img id="img1" src = {yacmeeting1} alt = "YAC"></img>
       </div>
-            <div className = "img2"
-           onMouseEnter = {() => { animateForward(); }}
-           onMouseLeave = {() => { animateBackward(); }}
+      
+      <div className = "img2"
+           onMouseEnter = {() => { animateForward2(); }}
+           onMouseLeave = {() => { animateBackward2(); }}
            >
         <img id="image2" src = {mangrove} alt = "YAC"></img>
       </div>

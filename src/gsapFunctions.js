@@ -10,12 +10,18 @@ let smoother = ScrollSmoother.create({
   content: '#smooth-content',
 })
 
-export const animateForward = () => {
+export const animateForward1 = () => {
   gsap.to(".imageGSAP", {x:75, y:25}) 
 }
 
-export const animateBackward = () => {
+export const animateBackward1 = () => {
   gsap.to(".imageGSAP", {x:-75, y:-25})
 }
  
+export const animateForward2 = () => {
+  gsap.to(".img2", {x:75, y:25})
+}
  
+export const animateBackward2 = () => {
+  gsap.to(".img2", {x:-75, y:-25}) 
+}
