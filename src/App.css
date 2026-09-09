@@ -67,12 +67,28 @@ ul {
 /* need to fix rendering upon reload */ 
 .imageGSAP img {
   position: absolute;
+  align-items:left;
   overflow: hidden;
   margin-top: 100px;
   width: 275px;
   height: 275px;
   border-radius: 10px;
   transform: rotate(-10deg);
+  border: 2.5px solid black;
+}
+
+.img2 {
+  display: inline-block;
+}
+
+.img2 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 300px;
+  width: 275px;
+  height: 275px;
+  border-radius: 10px;
+  transform: rotate(+10deg);
   border: 2.5px solid black;
 }
 
@@ -84,16 +100,19 @@ ul {
 #submit{
   position: relative;
   left: 255px;
-  top: 218px;
+  top: 219px;
   height: 40px;
   width: 100px;
   border-radius: 20px;
   border: 10px;
+  font-family: phantom;
+  font-size: 16px
 }
 
 #submit:hover {
-  background-color: darkgray;
+  background-color: rgb(210, 1, 1);
   color: white;
+  transition: background 0.4s, color 0.4s;
 }
 
 #email{
@@ -109,4 +128,10 @@ ul {
   background-color: rgb(53, 52, 52);
   color: white;
   font-family: phantom;
+}
+
+.title {
+  text-align: center;
+  font-family: phantom;
+  font-size: 50px;
 }

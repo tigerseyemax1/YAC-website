@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
 import yacmeeting1 from './assets/yacmeeting1.jpg'
+import mangrove from './assets/mangrove.jpg'
 import { animateForward, animateBackward } from './gsapFunctions'
 import { onUserEmailSubmit } from './firebase.js'
 
@@ -28,7 +29,13 @@ const LandingPage = () => {
            onMouseEnter = {() => { animateForward(); }}
            onMouseLeave = {() => { animateBackward(); }}
            >
-        <img src = {yacmeeting1} alt = "YAC"></img>
+        <img id="img1" src = {yacmeeting1} alt = "YAC"></img>
+      </div>
+            <div className = "img2"
+           onMouseEnter = {() => { animateForward(); }}
+           onMouseLeave = {() => { animateBackward(); }}
+           >
+        <img id="image2" src = {mangrove} alt = "YAC"></img>
       </div>
 
       <div>
@@ -36,7 +43,10 @@ const LandingPage = () => {
           <input type="text" id = "email" placeholder= "name@exmaple.com"/>
           <button id='submit' type="input" onClick = {onUserEmailSubmit}>Join!</button>
         </form>
-      </div> 
+      </div>
+      <h1 class ="title">
+        Youth Action Cayman
+      </h1>
 
       </div>
     </div>
