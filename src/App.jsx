@@ -32,6 +32,9 @@ const LandingPage = () => {
         <img id="img1" src = {yacmeeting1} alt = "YAC"></img>
       </div>
 
+      {/* notice that the functions are now numbered, each image will have to have its own separate function pair because:
+      the gsap.to() function is called on the div container name and each image div container has a unique name */}
+
       <div className = "img2"
            onMouseEnter = {() => { animateForward2(); }}
            onMouseLeave = {() => { animateBackward2(); }}
