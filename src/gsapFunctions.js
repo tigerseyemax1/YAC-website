@@ -25,3 +25,11 @@ export const animateForward2 = () => {
 export const animateBackward2 = () => {
   gsap.to(".img2", {duration: 0.40, x:0, y:0}) 
 }
+
+export const animateForward3 = () => {
+  gsap.to("#img3", {duration: 0.40, x:-150, y:25})
+}
+
+export const animateBackward3 = () => {
+  gsap.to("#img3", {duration: 0.40, x:0, y:0})
+}

@@ -91,6 +91,19 @@ ul {
   border: 2.5px solid black;
 }
 
+#img3 {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 300px;
+  margin-left: 1325px;
+  width: 275px;
+  height: 275px;
+  border-radius: 10px;
+  transform: rotate(+10deg);
+  border: 2.5px solid black;
+}
+
 #smooth-content {
   overflow: visible;
   width: 100%;
@@ -99,8 +112,8 @@ ul {
 
 #submit{
   position: relative;
-  left: 255px;
-  top: 219px;
+  top: 205px;
+  left: 983px;
   height: 40px;
   width: 100px;
   border-radius: 20px;
@@ -116,9 +129,10 @@ ul {
 }
 
 #email{
+  display: grid;
+  margin: auto;
   position: relative;
-  left: 360px;
-  top: 220px;
+  top: 250px;
   width: 700px;
   height: 40px;
   border-radius: 9999px;

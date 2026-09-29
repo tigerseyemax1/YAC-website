@@ -4,7 +4,8 @@ import './App.css'
 import youthactioncayman from './assets/youthactioncayman.jpg'
 import yacmeeting1 from './assets/yacmeeting1.jpg'
 import mangrove from './assets/mangrove.jpg'
-import { animateForward1, animateBackward1, animateForward2, animateBackward2} from './gsapFunctions'
+import CISmeeting from './assets/CIS_meeting.jpg'
+import { animateForward1, animateBackward1, animateForward2, animateBackward2, animateForward3, animateBackward3} from './gsapFunctions'
 import { onUserEmailSubmit } from './firebase.js'
 
 
@@ -40,6 +41,12 @@ const LandingPage = () => {
            onMouseLeave = {() => { animateBackward2(); }}
            >
         <img id="image2" src = {mangrove} alt = "YAC"></img>
+      </div>
+
+      <div className = "img3">
+        <img id="img3" src = {CISmeeting} alt = "CIS"
+             onMouseEnter = {() => { animateForward3(); }}
+             onMouseLeave = {() => { animateBackward3(); }}></img>
       </div>
 
       <div>
